@@ -1,0 +1,29 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="Vh9G7~!!Aap5wnrg(6o@">Player</variable><variable type="KIND_SpriteKind" id="DiRowV#J!TY#Jj:IEk`o">Projectile</variable><variable type="KIND_SpriteKind" id="f}4?qey-CbepaE{:?Zzq">Food</variable><variable type="KIND_SpriteKind" id="1wW(^O@w@,sV,volEM[J">Enemy</variable><variable id="O%4.9t8T.HMVmd*bTbRu">mySprite</variable></variables><block type="spriteshittile" id="g[Qw}Vapr3U)!@)!BqyM" x="0" y="0"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="Aks(+vVt?!WQYnI:~SK~"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="2+g)biiS1@;r_)}3dNpL"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="ilHPzmV%{Re={|:I,[tt"><field name="tile">img`
+        5 4 4 5 5 4 4 4 4 2 2 2 4 4 4 4
+        4 4 4 4 4 5 5 4 2 2 2 2 4 4 4 5
+        4 2 2 2 4 4 5 4 2 2 4 4 5 5 5 5
+        2 2 4 2 4 4 5 4 2 2 4 5 5 5 5 4
+        2 2 2 2 4 4 5 4 2 2 4 4 5 5 4 4
+        4 2 2 2 4 5 5 4 4 4 4 4 4 4 4 2
+        2 2 2 4 4 5 5 5 4 4 2 2 2 2 2 2
+        4 2 2 4 5 5 5 5 4 2 2 4 2 2 2 4
+        5 4 4 4 4 4 4 5 5 4 2 2 2 4 4 4
+        4 4 4 2 2 2 4 4 5 5 4 4 4 4 5 5
+        4 2 2 2 2 2 2 2 4 5 5 5 5 5 5 5
+        5 4 4 2 4 2 2 4 4 5 5 5 4 4 4 5
+        5 5 4 2 2 2 4 4 4 5 5 4 2 2 2 4
+        4 5 4 4 4 4 5 5 5 5 4 2 4 2 2 4
+        4 5 5 5 5 5 5 4 4 4 2 4 2 4 2 4
+        4 5 5 5 4 4 4 4 2 2 2 2 4 2 4 4
+    `</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="_M+{1K:l;/C}%eM-ynvY"><mutation typename="tiles.Location"></mutation><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="game_setgameovermessage" id="!bnV!l}!VTmyfgUDBaYq"><value name="message"><shadow type="text" id=":ge_cSl~obs$oM.I47bY"><field name="TEXT">GAME OVER!</field></shadow></value><value name="win"><shadow type="toggleWinLose" id="Wm[%Y=bb|$R)v6NLF,n3"><field name="win">true</field></shadow></value></block></statement></block><block type="pxt-on-start" id="Zv1+tJKw)%G.h261ZbB6" x="10" y="10"><statement name="HANDLER"><block type="variables_set" id="weVdzScJ)!@-ari@/3)1"><field name="VAR" id="O%4.9t8T.HMVmd*bTbRu">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="W[3CQdR)rniQ|yQkZf0R"><value name="img"><shadow type="screen_image_picker" id="ZtfJtm}56P{c/B_R+#.,"><field name="img">img`
+. . . . . . . . . . 
+. f f f f f f f f f 
+4 4 4 4 4 4 4 4 4 4 
+4 4 f f f f f f f f 
+. f f b f f f b f f 
+. f f b f f f b f f 
+. f f b f f f b f f 
+. f f f f f f f f f 
+. f f f f f f f f f 
+. f f f f f f f f f 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"ZtfJtm}56P{c/B_R+#.,"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="5kt;yuoV$H*s#]|,=:AA"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="(`x`~m#j~kQNQz(5Ijg;"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="sprite"><shadow type="variables_get" id="v70SNFJMOcwA9!h0~jfK"><field name="VAR" id="O%4.9t8T.HMVmd*bTbRu">mySprite</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker" id="A(=KZQr6r7ti*mNoWQxm"><field name="speed">100</field></shadow></value><next><block type="set_current_tilemap" id="e4r)Dt+9^l7uP#6C4R-F"><value name="tilemap"><shadow type="tiles_tilemap_editor" id=":/F[}olXNBo{{fl6dLwR"><field name="tilemap">tilemap`level4`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level3"}}</data></shadow></value><next><block type="camerafollow" id="?m$HhKu[U[x0Bi|`fu0u"><value name="sprite"><shadow type="variables_get" id="vrT2kimYN23]~J_OgET;"><field name="VAR" id="O%4.9t8T.HMVmd*bTbRu">mySprite</field></shadow></value></block></next></block></next></block></next></block></statement></block></xml>
