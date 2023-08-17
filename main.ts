@@ -56,5 +56,10 @@ mySprite2.setPosition(245, 245)
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function(sprite: Sprite, otherSprite: Sprite) {
     game.gameOver(true)
 })
-game.showLongText("Use arrow keys to move!", DialogLayout.Bottom)
 game.showLongText("   Help Cole find the Traveller's Tree!", DialogLayout.Bottom)
+game.showLongText("Use arrow keys to move! There are invisible walls!", DialogLayout.Bottom)
+info.startCountdown(10)
+info.onCountdownEnd(function() {
+    
+    game.gameOver(true)
+})
