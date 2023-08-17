@@ -60,6 +60,7 @@ game.showLongText("   Help Cole find the Traveller's Tree!", DialogLayout.Bottom
 game.showLongText("Use arrow keys to move! There are invisible walls!", DialogLayout.Bottom)
 info.startCountdown(10)
 info.onCountdownEnd(function() {
-    
+    game.setGameOverMessage(true, "GAME OVER!")
     game.gameOver(true)
+    game.setGameOverMessage(true, "GAME OVER!")
 })
