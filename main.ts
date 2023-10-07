@@ -61,6 +61,6 @@ game.showLongText("Use arrow keys to move! There are invisible walls!", DialogLa
 info.startCountdown(10)
 info.onCountdownEnd(function() {
     game.setGameOverMessage(true, "GAME OVER!")
-    game.gameOver(true)
+    game.gameOver(false)
     game.setGameOverMessage(true, "GAME OVER!")
 })
